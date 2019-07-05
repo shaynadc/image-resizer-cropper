@@ -1,0 +1,19 @@
+{
+  "name": "image-resizer-cropper",
+  "author": "Shayna Dunn",
+  "description": "A simple image crop with resizing built for Angular 7, compatible with Angular Universal (SSR).",
+  "version": "1.0.3",
+  "keywords": [
+    "Angular 7",
+    "Angular Universal",
+    "SSR",
+    "Image",
+    "Crop",
+    "Resize"
+  ],
+  "homepage": "https://github.com/shaynadc/image-resizer-cropper",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  }
+}

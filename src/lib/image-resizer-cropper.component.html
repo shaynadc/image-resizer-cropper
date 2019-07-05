@@ -1,0 +1,27 @@
+<ng-container *ngIf="sourceImage">
+  <div class="cr-container">
+    <div id="cr-lens">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <img
+      src="{{ loadedSourceImage }}"
+      style="transform: scale(1);"
+      draggable="false"
+      id="cr-image"
+    />
+    <div *ngIf="errorMessage" id="error-message">{{ errorMessage }}</div>
+  </div>
+  <div class="cr-range-selector">
+    <input type="range" id="cr-range" min="10" max="200" />
+  </div>
+  <div class="text-center">
+    <button id="crop" type="button">Crop</button>
+  </div>
+  <div>
+    <img src="#" id="test-img" style="display:none;" />
+    <img src="#" *ngIf="previewCrop && cropAvailable" id="final-crop" />
+  </div>
+</ng-container>
